@@ -3,262 +3,355 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Организация проживания командированных сотрудников и монтажных бригад, аренда спецтехники и сопровождение отдельных монтажных работ." />
-  <title>Размещение командированных и аренда спецтехники</title>
+  <meta name="description" content="Командировка Сервис — централизованное размещение командированных сотрудников, аренда спецтехники и отдельные монтажные работы по России." />
+  <meta name="theme-color" content="#0d1d34" />
+  <title>Командировка Сервис — размещение сотрудников по России</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://commons.wikimedia.org" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="На главную">
-        <span class="brand-mark">ИП</span>
-        <span class="brand-text">
+      <a class="brand" href="#top" aria-label="Командировка Сервис — на главную">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 54 42" fill="none">
+            <path d="M3 35L17 17L25 27L33 12L51 35" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 35H43" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
           <strong>Командировка Сервис</strong>
-          <small>Размещение • Спецтехника • Монтаж</small>
+          <small>Размещение • спецтехника • монтаж</small>
         </span>
       </a>
 
-      <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
 
       <nav class="main-nav" aria-label="Главная навигация">
         <a href="#services">Услуги</a>
-        <a href="#how">Как работаем</a>
+        <a href="#corporate">Для компаний</a>
         <a href="#geography">География</a>
-        <a href="#advantages">Преимущества</a>
-        <a class="nav-cta" href="#contacts">Оставить заявку</a>
+        <a href="#how">Как работаем</a>
+        <a href="#contacts">Контакты</a>
       </nav>
+
+      <a class="header-cta" href="#request">Оставить заявку <span>→</span></a>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">Для строительных, монтажных и промышленных компаний</div>
-          <h1>Организуем проживание командированных сотрудников <span>под ключ</span></h1>
+      <div class="hero-media" role="img" aria-label="Пейзаж России"></div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <div class="hero-main">
+          <div class="hero-kicker">Для строительных, монтажных и промышленных компаний</div>
+          <h1>Централизованное размещение командированных сотрудников по России</h1>
           <p class="hero-lead">
-            Централизованно находим жильё для монтажников, строителей и другого рабочего персонала,
-            согласовываем условия с арендодателями и предоставляем размещение заказчику от ИП.
+            Подбираем жильё для монтажных бригад, строителей и любого рабочего персонала.
+            Вы отправляете одну заявку — мы берём на себя поиск, согласование условий,
+            организацию размещения и закрывающие документы.
           </p>
-
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contacts">Рассчитать размещение</a>
-            <a class="btn btn-secondary" href="#services">Посмотреть услуги</a>
-          </div>
-
-          <div class="hero-points">
-            <div><strong>1 договор</strong><span>вместо десятков арендодателей</span></div>
-            <div><strong>Под задачу</strong><span>от нескольких человек до бригады</span></div>
-            <div><strong>По России</strong><span>подбираем жильё в городах проекта</span></div>
+            <a class="btn btn-gold" href="#request">Оставить заявку <span>→</span></a>
+            <a class="btn btn-whatsapp" href="https://wa.me/79219887588" target="_blank" rel="noopener noreferrer">
+              <span class="wa-dot">◉</span> Связаться в WhatsApp
+            </a>
           </div>
         </div>
 
-        <div class="hero-visual" aria-hidden="true">
-          <img src="assets/hero.svg" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-strip">
-      <div class="container trust-grid">
-        <span>Договорная работа</span>
-        <span>Акты и расчёты</span>
-        <span>Подбор жилья</span>
-        <span>Работа с бригадами</span>
-        <span>Организация по регионам</span>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-head">
+        <aside class="hero-trust" aria-label="Преимущества">
           <div>
-            <div class="eyebrow">Что мы делаем</div>
-            <h2>Закрываем бытовые и организационные задачи командировки</h2>
+            <span class="trust-icon">▣</span>
+            <strong>Работаем<br>с юрлицами</strong>
+          </div>
+          <div>
+            <span class="trust-icon">▤</span>
+            <strong>Счета, акты<br>и документы</strong>
+          </div>
+          <div>
+            <span class="trust-icon">⌖</span>
+            <strong>Подбор<br>по всей России</strong>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <span class="section-label">Наши услуги</span>
+            <h2>Комплексное сопровождение командировок</h2>
           </div>
           <p>
-            Берём на себя поиск, согласование и оформление услуг, чтобы заказчик не тратил ресурсы
-            на десятки локальных контактов в каждом городе.
+            Не нужно самостоятельно искать десятки арендодателей и подрядчиков в каждом регионе.
+            Один исполнитель закрывает согласованную задачу и ведёт коммуникацию с вашей компанией.
           </p>
         </div>
 
-        <div class="cards services-grid">
-          <article class="card service-card service-card--large">
-            <div class="card-icon"><img src="assets/housing.svg" alt="" /></div>
-            <div>
-              <span class="tag">Основное направление</span>
-              <h3>Размещение командированных сотрудников</h3>
-              <p>
-                Подбираем квартиры, дома, общежития, гостиничные и другие варианты проживания
-                под численность бригады, сроки проекта, бюджет и требования заказчика.
-              </p>
-              <ul>
-                <li>Поиск объектов и арендодателей</li>
-                <li>Согласование цены и условий проживания</li>
-                <li>Централизованная работа от одного ИП</li>
-                <li>Документы, расчёты и закрывающие акты</li>
-              </ul>
+        <div class="service-grid">
+          <article class="service-card service-card--housing">
+            <div class="service-photo">
+              <img src="https://images.unsplash.com/photo-1776500587913-6e55907a738e?auto=format&fit=crop&w=1200&q=82" alt="Комфортное размещение сотрудников" loading="lazy" />
+            </div>
+            <div class="service-body">
+              <span class="service-icon">⌂</span>
+              <div>
+                <h3>Проживание для командированных</h3>
+                <p>
+                  Централизованный подбор квартир, домов, общежитий, гостиниц и других вариантов
+                  под численность бригады, сроки, бюджет и требования заказчика.
+                </p>
+                <ul>
+                  <li>поиск объектов и собственников;</li>
+                  <li>согласование условий и стоимости;</li>
+                  <li>заселение и организационное сопровождение;</li>
+                  <li>договоры, счета, акты и расчёты.</li>
+                </ul>
+              </div>
             </div>
           </article>
 
-          <article class="card service-card">
-            <div class="card-icon compact"><img src="assets/machinery.svg" alt="" /></div>
-            <h3>Аренда спецтехники</h3>
-            <p>
-              Подбираем спецтехнику под задачу и сроки проекта. Работаем с локальными владельцами
-              и подрядчиками, координируем подачу и документы.
-            </p>
-            <div class="service-note">Тип техники и условия — по запросу заказчика.</div>
+          <article class="service-card">
+            <div class="service-photo">
+              <img src="https://images.unsplash.com/photo-1752342625685-bc342beb248e?auto=format&fit=crop&w=1200&q=82" alt="Аренда спецтехники" loading="lazy" />
+            </div>
+            <div class="service-body">
+              <span class="service-icon">◫</span>
+              <div>
+                <h3>Аренда спецтехники</h3>
+                <p>
+                  Подбираем технику под задачу проекта, сроки и регион. Работаем с локальными
+                  владельцами и подрядчиками, координируем подачу и документы.
+                </p>
+                <div class="card-note">Тип техники и условия согласовываются под конкретную заявку.</div>
+              </div>
+            </div>
           </article>
 
-          <article class="card service-card">
-            <div class="card-icon compact"><span class="line-icon">↗</span></div>
-            <h3>Отдельные монтажные работы</h3>
-            <p>
-              Можем подключаться к отдельным монтажным задачам и организационному сопровождению
-              на объектах в рамках согласованного объёма работ.
-            </p>
-            <div class="service-note">Состав работ фиксируется договором и техническим заданием.</div>
+          <article class="service-card">
+            <div class="service-photo">
+              <img src="https://images.unsplash.com/photo-1741009305401-c71594c08c2c?auto=format&fit=crop&w=1200&q=82" alt="Монтажные работы на объекте" loading="lazy" />
+            </div>
+            <div class="service-body">
+              <span class="service-icon">⌁</span>
+              <div>
+                <h3>Отдельные монтажные работы</h3>
+                <p>
+                  Подключаемся к отдельным монтажным задачам и организационному сопровождению
+                  на объекте в рамках согласованного объёма работ.
+                </p>
+                <div class="card-note">Состав, сроки и ответственность фиксируются договором и ТЗ.</div>
+              </div>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-dark" id="how">
+    <section class="section corporate" id="corporate">
       <div class="container">
-        <div class="section-head light">
-          <div>
-            <div class="eyebrow">Порядок работы</div>
-            <h2>Одна заявка — понятный процесс</h2>
-          </div>
-          <p>Подстраиваемся под проект, сроки заезда, количество людей и требования вашей компании.</p>
-        </div>
-
-        <div class="steps">
-          <article>
-            <span>01</span>
-            <h3>Получаем задачу</h3>
-            <p>Город, даты, количество сотрудников, бюджет, требования к размещению или технике.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Ищем варианты</h3>
-            <p>Проверяем локальный рынок, связываемся с собственниками и подрядчиками.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Согласовываем</h3>
-            <p>Предлагаем подходящий вариант, фиксируем стоимость, сроки и условия.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Организуем и закрываем</h3>
-            <p>Координируем заселение или подачу техники и оформляем необходимые документы.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="geography">
-      <div class="container geo-grid">
-        <div>
-          <div class="eyebrow">География</div>
-          <h2>Работаем там, где находится ваш проект</h2>
-          <p class="lead">
-            Подбор жилья и локальных подрядчиков строится под конкретный город. В работе уже
-            фигурировали проекты и организационные задачи в разных регионах России.
+        <div class="section-heading">
+          <span class="section-label">Для крупных компаний</span>
+          <h2>Почему снабжению, HR и руководителям проектов удобно работать с нами</h2>
+          <p class="wide-copy">
+            Главная ценность — централизация. Вместо десятков звонков, арендодателей и локальных
+            исполнителей ваша команда взаимодействует с одним контрагентом по согласованной задаче.
           </p>
-
-          <div class="city-chips" aria-label="Примеры географии">
-            <span>Камчатский край</span>
-            <span>Уссурийск</span>
-            <span>Ростов-на-Дону</span>
-            <span>Енисейск</span>
-            <span>Другие города России</span>
-          </div>
         </div>
 
-        <div class="geo-panel">
-          <div class="route-line"></div>
-          <div class="geo-stat">
-            <strong>Гибкая география</strong>
-            <span>Не привязаны к одному региону — ищем решение в городе вашего объекта.</span>
-          </div>
-          <div class="geo-stat">
-            <strong>Локальный поиск</strong>
-            <span>Работаем с собственниками жилья и подрядчиками непосредственно на месте.</span>
-          </div>
-          <div class="geo-stat">
-            <strong>Единый контрагент</strong>
-            <span>Заказчик получает централизованную коммуникацию и комплект документов.</span>
-          </div>
+        <div class="benefit-grid">
+          <article>
+            <span class="benefit-num">01</span>
+            <div class="benefit-icon">◎</div>
+            <h3>Единое окно для заявок</h3>
+            <p>Один контакт по размещению бригады и сопутствующим услугам в разных городах.</p>
+          </article>
+          <article>
+            <span class="benefit-num">02</span>
+            <div class="benefit-icon">↯</div>
+            <h3>Быстрый подбор вариантов</h3>
+            <p>Ищем на локальном рынке и предлагаем варианты в рамках бюджета и требований проекта.</p>
+          </article>
+          <article>
+            <span class="benefit-num">03</span>
+            <div class="benefit-icon">▤</div>
+            <h3>Работа по договору</h3>
+            <p>Фиксируем условия, сроки и объём услуг. Без разрозненных неформальных договорённостей.</p>
+          </article>
+          <article>
+            <span class="benefit-num">04</span>
+            <div class="benefit-icon">▧</div>
+            <h3>Закрывающие документы</h3>
+            <p>Счета, акты, расчёты и комплект документов для бухгалтерии в рамках сделки.</p>
+          </article>
+          <article>
+            <span class="benefit-num">05</span>
+            <div class="benefit-icon">⌖</div>
+            <h3>Гибкая география</h3>
+            <p>Не привязаны к одному городу — ищем решение непосредственно в регионе вашего объекта.</p>
+          </article>
+          <article>
+            <span class="benefit-num">06</span>
+            <div class="benefit-icon">◌</div>
+            <h3>Сопровождение до результата</h3>
+            <p>Остаёмся на связи от первичного запроса до заселения, подачи техники или закрытия работ.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-soft" id="advantages">
+    <section class="section geography" id="geography">
       <div class="container">
-        <div class="section-head">
+        <div class="section-heading split-heading">
           <div>
-            <div class="eyebrow">Почему это удобно</div>
-            <h2>Меньше операционной нагрузки на вашу команду</h2>
+            <span class="section-label">Наша география</span>
+            <h2>Работаем там, где находится ваш проект</h2>
           </div>
-          <p>Вместо самостоятельного поиска жилья, звонков и множества расчётов — один исполнитель по согласованной задаче.</p>
+          <p>
+            В работе фигурировали Камчатка, Уссурийск, Ростов-на-Дону, Енисейск и другие города.
+            Подбор строится под конкретную локацию, сроки и численность персонала.
+          </p>
         </div>
 
-        <div class="advantages-grid">
-          <article><span>01</span><h3>Централизация</h3><p>Один контакт по размещению бригады и сопутствующим услугам.</p></article>
-          <article><span>02</span><h3>Документы</h3><p>Договоры, акты, расчёты и организационные документы в рамках сделки.</p></article>
-          <article><span>03</span><h3>Под конкретный проект</h3><p>Учитываем численность, сроки, бюджет и особенности локации.</p></article>
-          <article><span>04</span><h3>Оперативная коммуникация</h3><p>Согласования идут через одного исполнителя, а не через десятки собственников.</p></article>
+        <div class="geo-gallery">
+          <article class="geo-card geo-card--wide" style="--geo-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Baikal%20ice%20on%20sunset%20-%20edited.jpg?width=1600')">
+            <div class="geo-overlay">
+              <span>Сибирь</span>
+              <h3>Байкал и удалённые регионы</h3>
+              <p>Организация проживания для проектных команд в сложной географии.</p>
+            </div>
+          </article>
+
+          <article class="geo-card" style="--geo-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Green%20hills%20of%20Kamchatka%20with%20cloud%20%28179253499%29.jpg?width=1400')">
+            <div class="geo-overlay">
+              <span>Дальний Восток</span>
+              <h3>Камчатка</h3>
+              <p>Поиск вариантов рядом с местом выполнения работ.</p>
+            </div>
+          </article>
+
+          <article class="geo-card" style="--geo-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/%D0%93%D0%BE%D1%80%D0%BD%D0%BE%D0%B5%20%D0%BE%D0%B7%D0%B5%D1%80%D0%BE%20%D0%BD%D0%B0%20%D0%90%D0%BB%D1%82%D0%B0%D0%B5.jpg?width=1400')">
+            <div class="geo-overlay">
+              <span>Регионы России</span>
+              <h3>Города и удалённые объекты</h3>
+              <p>Работаем не только в мегаполисах, но и в небольших населённых пунктах.</p>
+            </div>
+          </article>
+
+          <article class="geo-card geo-card--wide" style="--geo-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%B2%D0%BE%D1%80%D1%86%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BC%D0%BE%D1%81%D1%82%20%D0%BD%D0%BE%D1%87%D1%8C%D1%8E.jpg?width=1600')">
+            <div class="geo-overlay">
+              <span>Северо-Запад</span>
+              <h3>Санкт-Петербург и крупные города</h3>
+              <p>Централизованная коммуникация с корпоративным заказчиком.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="city-line">
+          <span>Камчатский край</span>
+          <span>Уссурийск</span>
+          <span>Ростов-на-Дону</span>
+          <span>Енисейск</span>
+          <span>Санкт-Петербург</span>
+          <span>Другие города России</span>
         </div>
       </div>
     </section>
 
-    <section class="section contacts" id="contacts">
-      <div class="container contact-card">
-        <div>
-          <div class="eyebrow">Заявка</div>
+    <section class="section process" id="how">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">Простой процесс</span>
+          <h2>Как мы работаем</h2>
+        </div>
+
+        <div class="process-line">
+          <article>
+            <span class="step">1</span>
+            <h3>Вы отправляете заявку</h3>
+            <p>Город, даты, количество сотрудников, бюджет и требования к проживанию или технике.</p>
+          </article>
+          <div class="process-arrow">→</div>
+          <article>
+            <span class="step">2</span>
+            <h3>Мы подбираем варианты</h3>
+            <p>Проверяем локальный рынок, связываемся с собственниками и согласовываем бюджет.</p>
+          </article>
+          <div class="process-arrow">→</div>
+          <article>
+            <span class="step">3</span>
+            <h3>Фиксируем условия</h3>
+            <p>Заключаем договор, согласовываем сроки и готовим документы для работы.</p>
+          </article>
+          <div class="process-arrow">→</div>
+          <article>
+            <span class="step">4</span>
+            <h3>Организуем и сопровождаем</h3>
+            <p>Контролируем заселение, подачу техники или выполнение согласованных работ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="corporate-cta">
+      <div class="corporate-cta-bg"></div>
+      <div class="container corporate-cta-inner">
+        <div class="corporate-cta-copy">
+          <span class="section-label section-label--light">Для корпоративных заказчиков</span>
+          <h2>Одна заявка вместо десятков локальных контактов</h2>
+          <p>
+            Снижаем операционную нагрузку на снабжение, HR и руководителей проектов:
+            берём на себя поиск жилья, коммуникацию с исполнителями и документальное сопровождение.
+          </p>
+          <a class="btn btn-gold" href="#request">Передать задачу <span>→</span></a>
+        </div>
+
+        <div class="corporate-facts">
+          <div><strong>1</strong><span>контрагент для коммуникации</span></div>
+          <div><strong>1</strong><span>централизованная заявка</span></div>
+          <div><strong>РФ</strong><span>гибкая география поиска</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacts">
+      <div class="container contact-layout">
+        <div class="contact-info">
+          <span class="section-label">Контакты</span>
           <h2>Опишите задачу — подготовим варианты</h2>
           <p>
-            Для первичного расчёта достаточно указать город, количество сотрудников, даты,
-            бюджет и пожелания к проживанию. Для спецтехники — тип техники, место и срок работы.
+            Для первичного запроса достаточно указать город, количество сотрудников, даты,
+            бюджет и пожелания. Для спецтехники — тип техники, место и срок работы.
           </p>
 
-          <div class="contact-details">
-            <a class="contact-item" href="tel:+79219887588">
-              <span>Телефон</span>
-              <strong>+7 921 988-75-88</strong>
-            </a>
-            <a class="contact-item" href="mailto:n9219887588@gmail.com">
-              <span>E-mail</span>
-              <strong>n9219887588@gmail.com</strong>
-            </a>
-            <a class="contact-item" href="https://wa.me/79219887588" target="_blank" rel="noopener noreferrer">
-              <span>WhatsApp</span>
-              <strong>Написать в WhatsApp</strong>
-            </a>
-            <div class="contact-item">
-              <span>Telegram</span>
-              <strong>По номеру +7 921 988-75-88</strong>
-            </div>
+          <div class="contact-list">
+            <a href="tel:+79219887588"><span>Телефон</span><strong>+7 921 988-75-88</strong></a>
+            <a href="mailto:n9219887588@gmail.com"><span>E-mail</span><strong>n9219887588@gmail.com</strong></a>
+            <a href="https://wa.me/79219887588" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>Написать по номеру</strong></a>
+            <div><span>Telegram</span><strong>По номеру +7 921 988-75-88</strong></div>
           </div>
 
-          <div class="legal-details">
-            <div class="legal-title">Реквизиты</div>
-            <div class="legal-grid">
-              <div><span>ИП</span><strong>Пархоменко Никита Андреевич</strong></div>
-              <div><span>ИНН</span><strong>781302579516</strong></div>
-              <div><span>ОГРНИП</span><strong>322784700364642</strong></div>
-              <div><span>Банковские реквизиты</span><strong>Предоставляются по запросу</strong></div>
-            </div>
+          <div class="legal-card">
+            <span class="legal-label">Реквизиты</span>
+            <strong>ИП Пархоменко Никита Андреевич</strong>
+            <div class="legal-row"><span>ИНН</span><b>781302579516</b></div>
+            <div class="legal-row"><span>ОГРНИП</span><b>322784700364642</b></div>
+            <div class="legal-row"><span>Банковские реквизиты</span><b>по запросу</b></div>
           </div>
         </div>
 
-        <form class="request-form" id="requestForm">
+        <form class="request-form" id="request" autocomplete="on">
+          <div class="form-title">
+            <span>Заявка</span>
+            <h3>Получить подбор вариантов</h3>
+          </div>
+
           <label>
             Что требуется
             <select name="service">
@@ -280,32 +373,65 @@
             </label>
           </div>
 
+          <div class="form-row">
+            <label>
+              Количество людей
+              <input name="people" type="text" placeholder="Например, 18 человек" />
+            </label>
+            <label>
+              Бюджет
+              <input name="budget" type="text" placeholder="Если известен" />
+            </label>
+          </div>
+
           <label>
             Описание задачи
-            <textarea name="details" rows="5" placeholder="Количество людей, бюджет, требования к жилью или параметры техники"></textarea>
+            <textarea name="details" rows="5" placeholder="Требования к проживанию, району, объекту, технике или работам"></textarea>
           </label>
 
-          <button class="btn btn-primary btn-full" type="submit">Сформировать заявку</button>
-          <p class="form-hint" id="formHint">
-            Кнопка соберёт текст заявки и скопирует его. Затем отправьте заявку по телефону, e-mail или WhatsApp.
-          </p>
+          <div class="form-actions">
+            <button class="btn btn-dark btn-full" type="submit">Отправить в WhatsApp <span>→</span></button>
+            <button class="copy-request" type="button" id="copyRequest">Скопировать текст заявки</button>
+          </div>
+          <p class="form-hint" id="formHint">WhatsApp откроется с уже заполненным текстом заявки.</p>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>Командировка Сервис</strong>
-        <p>Размещение командированных • аренда спецтехники • монтажные работы</p>
-      </div>
+    <div class="container footer-top">
+      <a class="brand brand--footer" href="#top">
+        <span class="brand-logo" aria-hidden="true">
+          <svg viewBox="0 0 54 42" fill="none">
+            <path d="M3 35L17 17L25 27L33 12L51 35" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 35H43" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>Командировка Сервис</strong>
+          <small>Размещение • спецтехника • монтаж</small>
+        </span>
+      </a>
       <div class="footer-legal">
         <span>ИП Пархоменко Никита Андреевич</span>
         <span>ИНН 781302579516</span>
         <span>ОГРНИП 322784700364642</span>
-        <span>Работа по договору</span>
       </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>Работа по договору. Банковские реквизиты предоставляются заказчику по запросу.</span>
+      <details class="photo-credits">
+        <summary>Источники фотографий</summary>
+        <div>
+          Главная: Влад Соколовский / Wikimedia Commons, CC BY-SA 4.0.
+          Байкал: Sergey Pesterev / Wikimedia Commons, CC BY-SA 4.0.
+          Алтай: Arseniy333 / Wikimedia Commons, CC BY 4.0.
+          Санкт-Петербург: Atasii / Wikimedia Commons, CC BY-SA 4.0.
+          Фото проживания, техники и монтажа: Unsplash.
+        </div>
+      </details>
     </div>
   </footer>
 
