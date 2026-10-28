@@ -2,8 +2,8 @@ const menuButton = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
 
 menuButton?.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
+  const opened = nav.classList.toggle('open');
+  menuButton.setAttribute('aria-expanded', String(opened));
 });
 
 document.querySelectorAll('.main-nav a').forEach(link => {
@@ -13,31 +13,43 @@ document.querySelectorAll('.main-nav a').forEach(link => {
   });
 });
 
-const form = document.getElementById('requestForm');
+const form = document.getElementById('request');
 const hint = document.getElementById('formHint');
+const copyButton = document.getElementById('copyRequest');
 
-form?.addEventListener('submit', async (event) => {
-  event.preventDefault();
-
+function buildRequestText() {
+  if (!form) return '';
   const data = new FormData(form);
-  const service = data.get('service') || 'Не указано';
-  const city = data.get('city') || 'Не указан';
-  const dates = data.get('dates') || 'Не указаны';
-  const details = data.get('details') || 'Без дополнительных комментариев';
+  const value = (key, fallback = 'не указано') => String(data.get(key) || '').trim() || fallback;
 
-  const text = [
-    'Заявка с сайта',
+  return [
+    'Здравствуйте! Заявка с сайта «Командировка Сервис».',
     '',
-    'Услуга: ' + service,
-    'Город: ' + city,
-    'Сроки: ' + dates,
-    'Описание: ' + details
+    'Услуга: ' + value('service'),
+    'Город: ' + value('city'),
+    'Сроки: ' + value('dates'),
+    'Количество людей: ' + value('people'),
+    'Бюджет: ' + value('budget'),
+    '',
+    'Описание задачи:',
+    value('details', 'без дополнительных комментариев')
   ].join('\n');
+}
 
+form?.addEventListener('submit', event => {
+  event.preventDefault();
+  const text = buildRequestText();
+  const url = 'https://wa.me/79219887588?text=' + encodeURIComponent(text);
+  window.open(url, '_blank', 'noopener,noreferrer');
+  if (hint) hint.textContent = 'WhatsApp открыт с заполненной заявкой.';
+});
+
+copyButton?.addEventListener('click', async () => {
+  const text = buildRequestText();
   try {
     await navigator.clipboard.writeText(text);
-    hint.textContent = 'Готово: текст заявки скопирован в буфер обмена.';
+    if (hint) hint.textContent = 'Текст заявки скопирован в буфер обмена.';
   } catch {
-    hint.textContent = 'Заявка сформирована. Скопируйте данные из формы и отправьте по контактам компании.';
+    if (hint) hint.textContent = 'Не удалось скопировать автоматически. Вы можете отправить данные из формы по телефону или e-mail.';
   }
 });
